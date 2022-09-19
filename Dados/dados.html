@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolador De Dados</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="dados.css">
+    <script src="dados.js"></script>
+</head>
+
+<body>
+
+<img src="banner dados.jpg" alt="Logo De Dados" id="banner">
+
+    <fieldset class="selecionar">
+
+        <legend>Selecione O Dado A Ser Utilizado:</legend>
+        
+        <label><input type="radio" name="DX" value="D4" id="radio-d4">D4</label>
+        <label><input type="radio" name="DX" value="D6" id="radio-d6">D6</label>
+        <label><input type="radio" name="DX" value="D8" id="radio-d8">D8</label>
+        <label><input type="radio" name="DX" value="D10" id="radio-d10">D10</label>
+        <label><input type="radio" name="DX" value="D12" id="radio-d12">D12</label>
+        <label><input type="radio" name="DX" value="D20" id="radio-d20" checked>D20</label>
+        <label><input type="radio" name="DX" value="D100" id="radio-d100">D100</label>
+
+    </fieldset>
+
+    <ul class="resultado">
+
+        <li>
+            <h2 id="numresult"></h2>
+        </li>
+
+    </ul>
+    
+    <button type="button" value="rolar" id="rolar" onclick= "funcao()" >rolar</button>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Dados Érik - 2022</p>
+    </footer>
+
+</body>
+
+</html>
